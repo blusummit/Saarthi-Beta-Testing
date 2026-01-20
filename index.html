@@ -18,31 +18,42 @@
       margin: 0 auto;
       padding: 40px 20px 24px;
     }
+
+    /* Header */
     header {
       display: flex;
       align-items: center;
       gap: 14px;
-      margin-bottom: 28px;
+      margin-bottom: 18px;
     }
     header img {
       width: 48px;
       height: 48px;
+      object-fit: contain;
     }
     header span {
       font-size: 22px;
       font-weight: 700;
       letter-spacing: 0.3px;
     }
+
+    /* Beta badge */
+    .badge-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
     .badge {
-      display: inline-block;
       background: rgba(0,255,160,.12);
       border: 1px solid rgba(0,255,160,.28);
       color: #38f2a0;
-      padding: 6px 12px;
+      padding: 6px 14px;
       border-radius: 999px;
       font-weight: 600;
-      margin-bottom: 16px;
+      font-size: 14px;
     }
+
+    /* Typography */
     h1 {
       margin: 0 0 12px;
       font-size: 42px;
@@ -53,6 +64,8 @@
       color: rgba(233,241,247,.85);
       font-size: 18px;
     }
+
+    /* Layout */
     .grid {
       display: grid;
       grid-template-columns: 1.2fr .8fr;
@@ -69,6 +82,16 @@
       margin: 14px 0 0 18px;
       color: rgba(233,241,247,.9);
     }
+
+    /* Sub note */
+    .subnote {
+      margin-top: 18px;
+      font-size: 16px;
+      color: rgba(233,241,247,.75);
+      line-height: 1.45;
+    }
+
+    /* CTA */
     .btn {
       display: inline-block;
       margin-top: 18px;
@@ -81,17 +104,24 @@
       text-decoration: none;
       text-align: center;
     }
+
+    /* Footer */
     footer {
       margin-top: 48px;
       padding-top: 18px;
       border-top: 1px solid rgba(255,255,255,.12);
       text-align: center;
+    }
+    .footer-title {
+      font-weight: 700;
+      color: rgba(233,241,247,.9);
+      margin-bottom: 6px;
+    }
+    .footer-sub {
       font-size: 14px;
       color: rgba(233,241,247,.65);
     }
-    footer strong {
-      color: rgba(233,241,247,.9);
-    }
+
     @media (max-width: 860px) {
       .grid {
         grid-template-columns: 1fr;
@@ -106,20 +136,25 @@
 <body>
   <div class="wrap">
 
-    <!-- Header with logo -->
+    <!-- Header -->
     <header>
-      <img src="assets/saarthi-logo.png" alt="Saarthi logo" />
+      <img src="assets/Saarthi-logo.png" alt="Saarthi logo" />
       <span>Saarthi</span>
     </header>
 
-    <div class="badge">Beta starts • 28 Jan 2026</div>
+    <!-- Beta badge -->
+    <div class="badge-wrap">
+      <div class="badge">Beta starts • Jan 2026</div>
+    </div>
 
+    <!-- Hero -->
     <h1>Instant Mutual Fund Data on Any Website</h1>
     <p>
       Stop switching tabs. Saarthi lets you hover over any mutual fund name and instantly
       see key metrics — right where you’re reading.
     </p>
 
+    <!-- Content -->
     <div class="grid">
       <div class="card">
         <h2 style="margin:0 0 10px;">What you’ll get</h2>
@@ -129,10 +164,10 @@
           <li>AUM</li>
           <li>AMFI-sourced reference data</li>
         </ul>
-        <p style="margin-top:16px;">
+        <div class="subnote">
           Context switching breaks focus and slows comparisons.
           Saarthi keeps your research flow intact.
-        </p>
+        </div>
       </div>
 
       <div class="card">
@@ -152,8 +187,10 @@
 
     <!-- Footer -->
     <footer>
-      <div><strong>Powered by BluSummit Ventures</strong></div>
-      <div>We use your information only to communicate about Saarthi beta access.</div>
+      <div class="footer-title">Powered by BluSummit Ventures</div>
+      <div class="footer-sub">
+        We use your information only to communicate about Saarthi beta access.
+      </div>
     </footer>
 
   </div>
