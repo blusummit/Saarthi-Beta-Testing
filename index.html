@@ -96,3 +96,119 @@
       margin: 14px 0 0 18px;
       color: rgba(233,241,247,.9);
     }
+
+    /* Sub note */
+    .subnote {
+      margin-top: 18px;
+      font-size: 16px;
+      color: rgba(233,241,247,.75);
+      line-height: 1.45;
+    }
+
+    /* CTA */
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      background: #38f2a0;
+      color: #042216;
+      font-weight: 800;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      text-align: center;
+    }
+    .footer-title {
+      font-weight: 700;
+      color: rgba(233,241,247,.9);
+      margin-bottom: 6px;
+    }
+    .footer-sub {
+      font-size: 14px;
+      color: rgba(233,241,247,.65);
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <header>
+      <div class="logo-wrap">
+        <img src="assets/Saarthi-logo.png" alt="Saarthi logo" />
+      </div>
+      <span>Saarthi</span>
+    </header>
+
+    <!-- Beta badge -->
+    <div class="badge-wrap">
+      <div class="badge">Beta starts • Early Feb 2026</div>
+    </div>
+
+    <!-- Hero -->
+    <h1>Instant Mutual Fund Data on Any Website</h1>
+    <p>
+      Stop switching tabs. Saarthi lets you hover over any mutual fund name and instantly
+      see key metrics — right where you’re reading.
+    </p>
+
+    <!-- Content -->
+    <div class="grid">
+      <div class="card">
+        <h2 style="margin:0 0 10px;">What you’ll get</h2>
+        <ul>
+          <li>1Y / 3Y / 5Y CAGR</li>
+          <li>Latest NAV</li>
+          <li>AUM</li>
+          <li>AMFI-sourced reference data</li>
+        </ul>
+        <div class="subnote">
+          Context switching breaks focus and slows comparisons.
+          Saarthi keeps your research flow intact.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 10px;">Join the beta</h2>
+        <p>Sign up in under 30 seconds. Invites will be sent in batches.</p>
+
+        <a
+          class="btn"
+          href="https://forms.gle/KhmmvcptqposEFz19"
+          target="_blank"
+          rel="noopener"
+        >
+          Request Beta Access
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-title">Powered by BluSummit Ventures</div>
+      <div class="footer-sub">
+        We use your information only to communicate about Saarthi beta access.
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
